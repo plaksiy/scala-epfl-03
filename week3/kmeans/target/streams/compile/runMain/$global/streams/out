@@ -1,0 +1,103 @@
+[0m[[0minfo[0m] [0mRunning kmeans.fun.ScalaShop [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	C:\dev\app\coursera\Scala\03-PP\week3\kmeans\target\scala-2.11\classes[0m
+[0m[[0mdebug[0m] [0m	C:\Users\vvpy\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\vvpy\.ivy2\cache\org.scalatest\scalatest_2.11\bundles\scalatest_2.11-2.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\vvpy\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\vvpy\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\vvpy\.ivy2\cache\com.storm-enroute\scalameter-core_2.11\jars\scalameter-core_2.11-0.6.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\vvpy\.ivy2\cache\org.apache.commons\commons-math3\jars\commons-math3-3.2.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\vvpy\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\vvpy\.ivy2\cache\com.github.scala-blitz\scala-blitz_2.11\jars\scala-blitz_2.11-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\vvpy\.ivy2\cache\org.scala-lang.modules\scala-swing_2.11\bundles\scala-swing_2.11-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread AWT-Shutdown to terminate.[0m
+[0m[[31merror[0m] [0m(AWT-EventQueue-0) java.util.NoSuchElementException: key not found: (0.1, 0.11, 0.11)[0m
+java.util.NoSuchElementException: key not found: (0.1, 0.11, 0.11)
+	at scala.collection.MapLike$class.default(MapLike.scala:228)
+	at scala.collection.AbstractMap.default(Map.scala:59)
+	at scala.collection.MapLike$class.apply(MapLike.scala:141)
+	at scala.collection.AbstractMap.apply(Map.scala:59)
+	at kmeans.KMeans$$anonfun$update$1.apply(KMeans.scala:66)
+	at kmeans.KMeans$$anonfun$update$1.apply(KMeans.scala:66)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:742)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1194)
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:104)
+	at kmeans.KMeans.update(KMeans.scala:66)
+	at kmeans.KMeans.kMeans(KMeans.scala:75)
+	at kmeans.fun.IndexedColorFilter.<init>(IndexedColors.scala:29)
+	at kmeans.fun.PhotoCanvas.applyIndexedColors(PhotoCanvas.scala:79)
+	at kmeans.fun.ScalaShop$ScalaShopFrame$$anon$1$$anonfun$1.apply$mcV$sp(ScalaShop.scala:113)
+	at kmeans.fun.ScalaShop$ScalaShopFrame$$anon$1$$anonfun$1.apply(ScalaShop.scala:113)
+	at kmeans.fun.ScalaShop$ScalaShopFrame$$anon$1$$anonfun$1.apply(ScalaShop.scala:113)
+	at org.scalameter.MeasureBuilder$$anonfun$measure$1.apply(MeasureBuilder.scala:53)
+	at org.scalameter.Measurer$Default.measure(Measurer.scala:53)
+	at org.scalameter.MeasureBuilder.measureWith(MeasureBuilder.scala:41)
+	at org.scalameter.MeasureBuilder.measure(MeasureBuilder.scala:53)
+	at kmeans.fun.ScalaShop$ScalaShopFrame$$anon$1.actionPerformed(ScalaShop.scala:112)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+[0m[[0mdebug[0m] [0mDisposing 1 top-level windows...[0m
+[0m[[0mdebug[0m] [0mWaiting 2 s to let AWT thread exit.[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[TimerQueue,5,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-Windows,6,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-Shutdown,5,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Thread-2,5,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Thread-1,6,system][0m
+[0m[[0mdebug[0m] [0mInterrupting thread AWT-EventQueue-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted AWT-EventQueue-0[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Thread-3,5,system][0m
+[0m[[0mdebug[0m] [0m	Thread AWT-Shutdown exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mDisposing 1 top-level windows...[0m
+[0m[[0mdebug[0m] [0mWaiting 2 s to let AWT thread exit.[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[TimerQueue,5,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-Windows,6,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Thread-2,5,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Thread-1,6,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Thread-3,5,system][0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m
